@@ -102,4 +102,4 @@ async def testing123(ctx):
     print(mentions)
 
 
-client.run('NjU0NzgzMzQ3MzE4NDU2MzQx.XiIZaw.ATgCBs2-QKODgpemlEFaPbboMGc')
+client.run(Token)
