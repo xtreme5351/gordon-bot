@@ -58,7 +58,7 @@ client.timer_manager = timers.TimerManager(client)
 @client.event
 async def on_reminder(ctx, channel_id, r, text):
     roleList = [role.mention for role in ctx.guild.roles if role.mentionable]
-    actualRole = ["Racists", "CSGO", "Sammy", "candidate", "W.E.E.B", "Eminem", "Wizard101", "Marco", "Luigi", "Giovanni", "Giuseppe", "Yasindu", "Yahya", "Shreyas", "Shamith", "Sammy", "Sam", "Reda", "Eliyas", "Prince", "Pranav", "Nimer", "Matthew", "Manik", "Leroi", "Josh K", "Kavya", "Karolis", "Irfan", "Frazer", "Henry", "Eliot", "Denis", "Clement", "Arya", "Andy", "Ashwin", "Arnav", "Adnan", "Aarnie", "Vegans", "Saiyajin", "Lowest of the Low", "Level 100 Boss", "R6 Bois", "EPIC GAMERS", "Hreh", "Underground Society", "gay", "Bronobo", "Ambassador of Dubai", "French Toast", "Overlord", "Supreme Weeb", "Tony", "Don Cheadle", "Wong-sama", "Noble Scribe", "Indian Tech Support", "xQc Addict", "Pensioners", "Mods"]
+    actualRole = ["Enter list of roles"]
     
     result = LinSearch(actualRole, r)
     print(result, len(actualRole))
