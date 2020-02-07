@@ -14,13 +14,10 @@ version = 0.9
 responses= ['OK GAMER', 'How about no?', 'Fuck off', 'K']
 
 
-def LinSearch(arr, x): 
-  
+def LinSearch(arr, x):  
     for i in range(len(arr)): 
-  
         if arr[i] == x: 
             return i 
-  
     return -1
  
  
