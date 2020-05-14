@@ -3,5 +3,5 @@ Its gordon (not real, discord bot). Its main purpose is to set timers and remind
 
 Everything thing on the bot is interacted through the g. command
 
-This is for personal use mostly, I'll update whenever
+This is for mainly personal use but idc who else uses it, I'll update whenever
 
