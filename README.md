@@ -7,6 +7,10 @@ To create a bot application, go to this link: https://discord.com/login?redirect
 Steps to get discord bot token:
 Click on your application > "Bot" > "Click to reveal token" > "Copy"
 
-This is for mainly personal use but idc who else uses it, I'll update it whenever
+This is for mainly personal use but idc who else uses it, I'll update it whenever.
+
+Invite.txt is just my bot's invite code that is retrieved from discord apps. Dont use that, its not valid anyway
+
+RoleIds.txt was just a test to output different role IDs to an external file.
 
 Ty :D
