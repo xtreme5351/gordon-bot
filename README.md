@@ -15,6 +15,7 @@ Note
 
 Invite.txt is just my bot's invite code that is retrieved from discord apps. Dont use that, its not valid anyway
 RoleIds.txt was just a test to output different role IDs to an external file.
+The input and output folders are just examples of some manually saved inputs and outputs of texts. (The output is the result of the summarization algorithim)
 
 Also, saving the outputs of the summarize function / command currently doesn't work due to a logic error somewhere in the code. 
 The error is that the file saves but the counter defaults to 0 and doesn't increment correctly, leading to a save clash.
