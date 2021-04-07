@@ -11,7 +11,7 @@ client = commands.Bot(command_prefix='g.')
 c = discord.Client()
 # Removing the default help command so we can create our own
 client.remove_command('help')
-version = "1.3.3"
+version = "1.5.1"
 
 # Random responses said when g.help is called
 responses = ['OK GAMER', 'How about no?', 'Ok boomer', 'K', 'Bruh', 'xd', 'Lmao ok']
@@ -176,7 +176,7 @@ async def delete_msg(message):
 async def process(ctx):
     file_path = Formatter(ctx.channel.id).getInputFilePath(int(open("counter.txt", 'r').readline()))
     input_text = ''.join(open(file_path, 'r').readlines())
-    output = Summarizer().summarize(input_text)
+    output = await Summarizer().summarize(ctx, input_text)
     Summarizer().save_summaries(output, int(open("counter.txt", 'r').readline()))
 
 
