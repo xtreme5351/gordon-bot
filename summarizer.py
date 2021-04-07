@@ -1,10 +1,11 @@
 import torch
 import os.path
+import discord
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 
 class Summarizer:
-    def summarize(self, text):
+    async def summarize(self, ctx, text):
         preprocessed_text = "summarize:" + text.strip().replace("\n", "")
         tokenized = self.token.encode(preprocessed_text, return_tensors="pt").to(self.device)
         summarized = self.model.generate(tokenized,
@@ -14,6 +15,7 @@ class Summarizer:
                                          max_length=100,
                                          early_stopping=True)
         output_text = self.token.decode(summarized[0], skip_special_tokens=True)
+        await ctx.send(output_text)
         return output_text
 
     def save_summaries(self, text_to_save, index_num):
